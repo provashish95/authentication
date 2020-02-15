@@ -19,3 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HomeController@about')->name('about');
+
+
+Route::get('/customer', 'CustomerController@index')->name('customer');
+Route::get('/number', 'PhoneController@index')->name('number');
+Route::get('/post', 'PostController@index')->name('post');
+Route::get('/postbyname', 'PostController@Post')->name('PostByName');
